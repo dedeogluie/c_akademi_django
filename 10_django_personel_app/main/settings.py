@@ -45,6 +45,7 @@ INSTALLED_APPS = [
 
     # MyApps
     'user',
+    'personel',
 ]
 
 MIDDLEWARE = [
