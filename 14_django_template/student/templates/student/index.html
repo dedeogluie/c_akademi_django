@@ -1,0 +1,15 @@
+{% extends 'base.html' %} {% load static %} {% block link %}
+<link rel="stylesheet" href="{% static 'student/main.css' %}" />
+{% endblock link %} {% block title %}
+<title>Login</title>
+{% endblock title %} {% block body %} {% if number == 123 %}
+<p>PAkize</p>
+{% else %}
+<p>Ayşe</p>
+{% endif %}
+<hr />
+
+<p>{{ number | add:"2" }}</p>
+<p>{{ title | capfirst }}</p>
+
+{% endblock body %}

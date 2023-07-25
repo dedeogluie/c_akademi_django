@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello tih is home page....</h1>
+    <p>{{ title }}</p>
+    <p>{{ number }}</p>
+    <p>{{ list1.0 }}</p>
+    {% comment %} list1.0 == list1[0] {% endcomment %}
+    <p>{{ list1.2.0 }}</p>
+    <p>{{ dict1 }}</p>
+    <p>{{ dict1.a }}</p>
+    {% comment %} dict1.a == dict1['a'] {% endcomment %}
+
+    <hr />
+    <ul>
+      {% for i in list1 %}
+      <li>{{ i }}</li>
+      {% endfor %}
+    </ul>
+    <hr />
+
+    {% if number == 123 %}
+    <p>PAkize</p>
+    {% else %}
+    <p>Ayşe</p>
+    {% endif %}
+    <hr />
+
+    <p>{{ number | add:"2" }}</p>
+    <p>{{ title | capfirst }}</p>
+  </body>
+</html>
